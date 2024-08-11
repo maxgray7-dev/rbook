@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+=sbb5wbka9lv^mxk!)o+h-^fmev&o-pn7&urp^n)m3^-s^m2(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-maxgray7dev-rbook-ut637ue2b7x.ws-eu115.gitpod.io']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rbook',
 ]
 
 MIDDLEWARE = [
