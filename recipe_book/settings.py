@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-+=sbb5wbka9lv^mxk!)o+h-^fmev&o-pn7&urp^n)m3^-s^m2(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-maxgray7dev-rbook-z35cu006r3u.ws-eu115.gitpod.io']
+ALLOWED_HOSTS = ['8000-maxgray7dev-rbook-owe8pz13ged.ws-eu115.gitpod.io']
 
 
 # Application definition
@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django_summernote',
+    'cloudinary',
     'rbook',
 ]
 

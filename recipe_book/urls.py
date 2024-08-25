@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from rbook.views import my_rbook
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('rbook', my_rbook, name="rbook-urls"),
     path('admin/', admin.site.urls),
-    
+    path('summernote/', include('django_summernote.urls')),
+    path('editor/', include('django_summernote.urls')),
 ]
