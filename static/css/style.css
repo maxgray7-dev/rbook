@@ -1,0 +1,37 @@
+body {
+    background-color: #F6F4D2;
+}
+
+.card {
+    border: none;
+    background-color: #D4E09B;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #283618;
+}
+
+.post-link:hover,
+.page-link {
+    color: #E84610;
+}
+/* Post detail picture settings*/
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 90%;
+    height: 100%;
+    width: 150%;
+    background: #445261;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(15deg);
+    z-index: 100;
+}

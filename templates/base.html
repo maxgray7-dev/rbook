@@ -32,12 +32,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 <body class="d-flex flex-column h-100 main-bg">
    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #5fe0fd;">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary" style="background-color: #F19C79;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Recipe Book</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,13 +57,17 @@
                 </li>
               </ul>
               <span class="navbar-text">
-                Navbar text with an inline element
+                Welcome to Recipe Book!
               </span>
             </div>
           </div>
     </nav> 
 
 
-    <h1>Welcome!</h1>
+    <h1>Latest recipes</h1>
+
+    {% block content %}
+    <!-- Content Goes here -->
+    {% endblock content %}
 </body>
 </html>
